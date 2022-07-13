@@ -16,7 +16,9 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"], // Your TypeScript files extension
-
+      "rules": {
+        "import/no-extraneous-dependencies": "off",
+      },
       // As mentioned in the comments, you should extend TypeScript plugins here,
       // instead of extending them outside the `overrides`.
       // If you don"t want to extend any rules, you don"t need an `extends` attribute.
