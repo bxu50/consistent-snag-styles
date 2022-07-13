@@ -32,7 +32,8 @@
     "build-storybook": "build-storybook -s public",
     "rollup": "rollup -c",
     "test": "jest --watch",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
