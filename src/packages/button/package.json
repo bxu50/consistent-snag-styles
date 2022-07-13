@@ -1,0 +1,29 @@
+{
+  "name": "@consistent-snag-styles/button",
+  "version": "0.0.0",
+  "description": "test button package",
+  "keywords": [
+    "button"
+  ],
+  "author": "Halina Tang <htang@bunnings.com.au>",
+  "homepage": "https://github.com/bxu50/consistent-snag-styles#readme",
+  "license": "ISC",
+  "main": "lib/button.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bxu50/consistent-snag-styles.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/bxu50/consistent-snag-styles/issues"
+  }
+}

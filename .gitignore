@@ -24,3 +24,7 @@ yarn-error.log*
 
 /.vscode
 dist
+
+lerna-debug.log
+src/packages/*/lib
+.idea
