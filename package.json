@@ -1,7 +1,7 @@
 {
-  "name": "@consistent-snag-styles/consistent-snag-styles",
+  "name": "@bxu50/consistent-snag-styles",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/jyu-bunnings"
+    "registry": "https://npm.pkg.github.com/bxu50"
   },
   "version": "0.1.0",
   "author": "Liam Xu",
