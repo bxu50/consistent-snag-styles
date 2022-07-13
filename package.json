@@ -1,7 +1,18 @@
 {
-  "name": "bundig-style-guide",
+  "name": "@consistent-snag-styles/consistent-snag-styles",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/jyu-bunnings"
+  },
   "version": "0.1.0",
-  "private": true,
+  "author": "Liam Xu",
+  "license": "ISC",
+  "description": "A component library for consistent snag styles",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -17,12 +28,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "rollup": "rollup -c"
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +61,9 @@
     ]
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
@@ -74,6 +85,8 @@
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prop-types": "^15.8.1",
+    "rollup": "^2.76.0",
+    "rollup-plugin-dts": "^4.2.2",
     "tailwindcss": "^3.1.6",
     "webpack": "^5.73.0"
   }
