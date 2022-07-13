@@ -5,7 +5,10 @@
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
     "react/require-default-props": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/no-unescaped-entities": "off",
+    "import/no-extraneous-dependencies": "off"
   },
   "parserOptions": {
     "project": "./tsconfig.json"
