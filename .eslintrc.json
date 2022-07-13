@@ -4,7 +4,7 @@
     "react/function-component-definition": "off",
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/require-default-props"
+    "react/require-default-props": "off"
   },
   "parserOptions": {
     "project": "./tsconfig.json"
