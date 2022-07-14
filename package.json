@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/bxu50"
   },
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Liam Xu",
   "license": "ISC",
   "description": "A component library for consistent snag styles",
@@ -76,6 +76,7 @@
     "@storybook/manager-webpack5": "^6.5.9",
     "@storybook/node-logger": "^6.5.9",
     "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
     "@svgr/rollup": "^6.2.1",
@@ -83,6 +84,7 @@
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "css-loader": "^6.7.1",
     "eslint": "^8.19.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -96,6 +98,10 @@
     "rollup": "^2.76.0",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
     "tailwindcss": "^3.1.6",
     "webpack": "^5.73.0"
   }

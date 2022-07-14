@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../lib/tailwind.scss';
 
 export interface RadioButtonProps {
   id: string;
