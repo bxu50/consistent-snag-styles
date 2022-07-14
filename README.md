@@ -1,3 +1,5 @@
+# When a new component has been added, regenerate tailwind scss by running
+`npx tailwindcss-cli@latest build -o ./src/lib/tailwind.scss`
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
