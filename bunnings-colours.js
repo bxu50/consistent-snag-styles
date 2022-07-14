@@ -1,17 +1,7 @@
-/*
-  colors are grouped by color with a primary color specified with
-  and different shades specified using a number from 1 to 5 where 1 is the
-  lightest shade.
-
-  If a particular color has a state specified, it should be part of the
-  variable name, e.g. 'red_p_hover', and not a different color shade.
-*/
-
 module.exports = {
-  white: '#fff', // common.white in react
+  white: '#fff',
   black: '#000',
 
-  // Below are ugly names from react
   // Greens
   green_p: '#0D5257',
   green_p_hover: '#08454A',
