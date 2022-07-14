@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
+import url from 'postcss-url';
 
 const packageJson = require('./package.json');
 
@@ -25,7 +26,15 @@ export default [
       resolve(),
       commonjs(),
       typescript({ tsconfig: './tsconfig.json', exclude: ['**/stories/*', '**/*.test.ts'] }),
-      postcss(),
+      postcss({
+        plugins: [
+          url({
+            url: 'inline', // enable inline assets using base64 encoding
+            maxSize: 10, // maximum file size to inline (in kilobytes)
+            fallback: 'copy', // fallback method to use if max size is exceeded
+          }),
+        ],
+      }),
     ],
   },
   {

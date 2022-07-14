@@ -1,5 +1,4 @@
 import React, { InputHTMLAttributes } from 'react';
-import '../../lib/tailwind.scss';
 
 export interface RadioButtonProps
   extends InputHTMLAttributes<HTMLInputElement> {
