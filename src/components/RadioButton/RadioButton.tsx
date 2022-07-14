@@ -1,6 +1,7 @@
-import React from "react";
+import React, { InputHTMLAttributes } from 'react';
 
-export interface RadioButtonProps {
+export interface RadioButtonProps
+  extends InputHTMLAttributes<HTMLInputElement> {
   id: string;
   label: string;
   name: string;
@@ -12,6 +13,7 @@ const RadioButton: React.FC<RadioButtonProps> = ({
   label,
   name,
   value,
+  ...otherProps
 }) => (
   <>
     <input
@@ -19,11 +21,12 @@ const RadioButton: React.FC<RadioButtonProps> = ({
       id={id}
       name={name}
       value={value}
-      className="invisible"
+      className="peer radio-button sr-only"
+      {...otherProps}
     />
     <label
       htmlFor={id}
-      className="py-3.5 pl-4 pr-14 bg-white border border-black border-solid text-primary-main text-sm relative before:absolute before:w-5 before:h-5 before:rounded-full before:border before:border-black before:border-solid before:right-4 before:top-4"
+      className="py-4 pl-4 pr-14 bg-white border border-grey_3 border-solid text-primary-main text-sm font-bold relative before:absolute before:w-5 before:h-5 before:rounded-full before:border before:border-black before:border-solid before:right-4 before:top-3.5 hover:border-black"
     >
       {label}
     </label>
